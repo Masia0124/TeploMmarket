@@ -5,4 +5,13 @@ $(document).ready(function () {
         autoplay: true,
         autoplaySpeed: 4000,
     });
+
+    $(".fa-close").click(function () {
+        $('.catalog-viewport').removeClass('catalog-viewport__active');
+        $('.catalog-viewport__inner').removeClass('catalog-viewport__inner__active');
+    })
+    $("#categories").click(function () {
+        $('.catalog-viewport').addClass('catalog-viewport__active');
+        $('.catalog-viewport__inner').addClass('catalog-viewport__inner__active');
+    })
 });
