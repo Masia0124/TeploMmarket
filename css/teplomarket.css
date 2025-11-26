@@ -1,0 +1,471 @@
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.d-flex {
+    display: flex;
+}
+
+body {
+    background: linear-gradient(to bottom, #E4F2FF, #E9DACC);
+    font-family: "Montserrat", sans-serif;
+    background-repeat: no-repeat;
+}
+
+/* Header */
+
+.top-bar {
+    background-color: #0063E5;
+
+}
+
+.top-bar_container {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo_header {
+    max-width: 139px;
+    margin: 1px 22px;
+    border-radius: 24px;
+}
+
+.top-left nav ul {
+    list-style: none;
+    text-decoration: none;
+    gap: 30px;
+}
+
+.top-left nav ul a {
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.top-left nav {
+    align-items: center;
+}
+
+.top-right {
+    align-items: center;
+    gap: 17px;
+    padding-right: 22px;
+}
+
+.top-right a {
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+    align-items: center;
+}
+
+.top-right img {
+    height: 35px;
+}
+
+.top-right a:nth-child(2) img {
+    height: 35px;
+    width: 35px;
+}
+
+/* < !-- Main Navigation -->  */
+
+.main_nav {
+    background-color: #FFF5F5;
+}
+
+.main_nav_container {
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 0;
+}
+
+.main_nav_container>div>button {
+    background-color: #FF670D;
+    width: 230px;
+    height: 50px;
+    color: #fff;
+    font-size: 27px;
+    font-weight: 400;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.search-box input {
+    width: 750px;
+    position: relative;
+}
+
+/* .main_nav_container div:nth-child(3) {
+    gap: 5px;
+} */
+
+.main_nav_container div:nth-child(3) a {
+    padding: 10px 0;
+}
+
+.main_nav_container img {
+    width: 35px;
+    height: 35px;
+
+}
+
+.main_nav_container div:nth-child(3) {
+    gap: 10px;
+}
+
+.wrapper {
+    height: auto;
+    width: 100%;
+}
+
+.slider {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 0 50px;
+}
+
+.slider .slick-arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    font-size: 0;
+    width: 50px;
+    height: 50px;
+    margin: -40px 0 0 0;
+}
+
+.slider_item {
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.slider_item>img {
+    height: 440px;
+    object-fit: cover;
+}
+
+
+.slider .slick-arrow.slick-prev {
+    left: 0;
+    background: url('/icons/left.svg') 0 0 /100% no-repeat;
+}
+
+.slider .slick-arrow.slick-next {
+    right: 0;
+    background: url('/icons/right.svg') 0 0 /100% no-repeat;
+}
+
+.slick-track {
+    display: flex;
+}
+
+.slick-list {
+    overflow: hidden;
+}
+
+.slider .slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider .slick-dots li {
+    margin: 0 10px;
+}
+
+/* Активна точка */
+
+.slider .slick-dots li.slick-active button {
+    background-color: transparent;
+    border: 1px solid #FF670D;
+
+}
+
+/* Елемент точки */
+
+.slider .slick-dots li button {
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    background-color: #FFF5F5;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 480px) {
+
+    .logo_header {
+        max-width: 69px !important;
+        margin: 1px 10px !important;
+        border-radius: 20px !important;
+    }
+
+    .top-left nav {
+        display: none;
+    }
+
+    .top-right a:nth-child(2) img {
+        height: 30px;
+        width: 30px;
+    }
+
+    .top-right img {
+        height: 30px;
+    }
+
+    .top-right {
+        gap: 12px;
+        padding-right: 10px;
+    }
+
+    .slider {
+        height: 180px !important;
+    }
+
+    .slider_item>img {
+        height: 110px !important;
+    }
+
+    .slick-list {
+        height: auto;
+    }
+
+    .slick-track {
+        height: 130px !important;
+    }
+
+    .slider .slick-arrow {
+        width: 30px;
+    }
+
+    .slider .slick-arrow.slick-next {
+        right: 5%;
+    }
+
+    .slider .slick-arrow.slick-prev {
+        left: 5%;
+    }
+
+    .slider .slick-dots li {
+        margin: 0 5px;
+    }
+
+    .slider .slick-dots li button {
+        width: 6px;
+        height: 6px;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+
+    /* планшети */
+
+    .main_nav_container {
+        padding: 0px 0;
+    }
+
+    .top-right a:nth-child(1) {
+        display: none;
+    }
+
+    .logo_header {
+        max-width: 89px;
+        margin: 1px 10px;
+        border-radius: 20px;
+    }
+
+    .top-left nav ul {
+        gap: 10px;
+    }
+
+    .top-left nav ul a {
+        font-size: 14px;
+    }
+
+    .search-box input {
+        width: 250px !important;
+    }
+
+    .main_nav_container img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .main_nav_container>div>button {
+        font-size: 0;
+        width: 50px;
+        justify-content: center;
+    }
+
+
+    .slick-list {
+        height: auto;
+    }
+
+    /* .slider {
+        height: 200px !important;
+    } */
+
+    .slick-track {
+        height: 200px;
+    }
+
+    .slider_item>img {
+        height: auto;
+    }
+
+    .main_nav_container>div>button {
+        width: 35px !important;
+        height: 35px;
+    }
+
+    .main_nav_container {
+        gap: 10px;
+    }
+
+    .search-box ::placeholder {
+        font-size: 14px;
+    }
+
+    .search-box span button img {
+        width: 30px !important;
+        height: 30px !important;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    /* стандартні ноутбуки */
+    .top-left nav ul {
+        gap: 20px;
+    }
+
+    .top-right a {
+        font-size: 18px;
+    }
+
+    .search-box input {
+        width: 500px;
+    }
+
+    .main_nav_container img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .main_nav_container>div>button {
+        font-size: 0;
+        width: 50px;
+        justify-content: center;
+    }
+
+    .slick-list {
+        height: auto;
+    }
+
+    .slider {
+        height: 300px;
+
+    }
+
+    .slick-track {
+        height: 300px;
+    }
+
+    .slider_item>img {
+        height: auto;
+    }
+
+    .main_nav_container div:nth-child(3) a {
+        padding: 5px 0;
+    }
+}
