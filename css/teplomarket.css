@@ -71,7 +71,11 @@
     margin-top: 20px;
 }
 
-.catalog-viewport__inner ul li {
+.catalog-viewport__inner>nav {
+    padding-bottom: 20px;
+}
+
+.dropdawn_list li {
     margin: 15px 0px;
 }
 
@@ -102,21 +106,21 @@
 .dropdawn {
     border-bottom: solid 2px #f6f6f6;
     padding-bottom: 15px;
+    padding-top: 15px;
     position: relative;
     cursor: pointer;
 }
 
 .dropdawn.active {
     color: #8B4513;
-    /* Коричневий */
     font-weight: bold;
 }
 
 .dropdawn i {
+    margin-top: 15px;
     position: absolute;
     right: 5px;
     top: 0%;
-    /* transform: translateY(-50%); */
     transition: transform 0.3s;
 }
 
@@ -593,6 +597,18 @@ a:hover {
     .slider .slick-dots li button {
         width: 6px;
         height: 6px;
+    }
+
+    .catalog-viewport__inner__header h3 {
+        font-size: 25px;
+    }
+
+    .catalog-viewport__inner {
+        padding: 25px;
+    }
+
+    .catalog-viewport__inner__header i {
+        font-size: 25px;
     }
 }
 
