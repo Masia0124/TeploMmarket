@@ -1,0 +1,27 @@
+.slick-slider {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+}
+
+.slick-list {
+    overflow: hidden;
+    position: relative;
+}
+
+.slick-track {
+    display: flex;
+}
+
+.slick-slide {
+    display: none;
+    float: left;
+}
+
+.slick-slide.slick-active {
+    display: block;
+}
+
+.slick-initialized .slick-slide {
+    display: block;
+}
