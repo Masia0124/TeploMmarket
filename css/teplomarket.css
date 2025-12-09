@@ -14,10 +14,17 @@ body {
     background-repeat: no-repeat;
     height: auto;
     /* min-height: 100vh; */
+
+
 }
 
 
-
+html,
+body {
+    height: auto;
+    min-height: 100%;
+    width: 100%;
+}
 
 
 .container {
@@ -211,6 +218,11 @@ body {
 }
 
 /* < !-- Main Navigation -->  */
+main {
+    display: block;
+    width: 100%;
+    min-height: 100vh;
+}
 
 .main_nav {
     background-color: #FFF5F5;
@@ -275,8 +287,8 @@ a:hover {
 }
 
 .wrapper {
-    height: auto;
-    width: 100%;
+    display: block;
+    overflow: visible;
 }
 
 .slider {
@@ -348,6 +360,12 @@ a:hover {
     margin: 0 10px;
 }
 
+.slider,
+.slick-list,
+.slick-track {
+    height: 550px !important;
+}
+
 /* Активна точка */
 
 .slider .slick-dots li.slick-active button {
@@ -372,6 +390,8 @@ a:hover {
     left: 50%;
     transform: translateX(-50%);
 }
+
+
 
 /* Section1_icons */
 
