@@ -6,6 +6,20 @@ $(document).ready(function () {
         autoplaySpeed: 4000,
     });
 
+
+    $(".carts").slick({
+        dots: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        slidesToScroll: 2,
+        centerMode: false,
+        variableWidth: true,
+        autoplay: false,
+        infinite: false,
+    });
+
+
     $(".fa-close").click(function () {
         $('.catalog-viewport').removeClass('catalog-viewport__active');
         $('.catalog-viewport__inner').removeClass('catalog-viewport__inner__active');
