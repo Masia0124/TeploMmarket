@@ -538,7 +538,7 @@ a:hover {
     height: 240px;
 }
 
-.cart_img > img {
+.cart_img>img {
     height: 90%;
     margin: auto;
 }
@@ -907,7 +907,7 @@ a:hover {
     }
 
     .cart_item {
-        flex: 0 0 200px;
+        flex: 0 0 180px;
     }
 
     .cart_img {
@@ -960,6 +960,10 @@ a:hover {
 
     .newItems h5 {
         width: 120px;
+    }
+
+    .carts .slick-slide {
+        margin-right: 12px;
     }
 }
 
