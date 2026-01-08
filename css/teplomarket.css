@@ -1090,6 +1090,7 @@ footer hr {
 
     .footer_bottom div:nth-child(4) {
         padding-bottom: 20px;
+        padding-top: 20px;
     }
 
     .footer_contacts {
