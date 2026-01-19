@@ -752,7 +752,7 @@ footer hr {
 .filter_aside_active {
     display: block !important;
     margin-top: 30px;
-    margin-left: 10px;
+    margin-left: 5px;
     transition: .3s;
 }
 
@@ -845,6 +845,14 @@ footer hr {
 
 .sorting_mobiile-h3 {
     display: none;
+}
+
+.categori_div {
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    justify-content: center;
 }
 
 
@@ -1204,18 +1212,19 @@ footer hr {
 
     .filter_aside {
         position: fixed;
-        width: 50%;
+        width: 40%;
         display: none;
         transition: .3s;
     }
 
     .filter_mobile {
         display: block !important;
-        width: 50%;
+        width: 40%;
         /* margin-top: 20px; */
-        margin-left: 10px;
+        margin-left: 5px;
         position: fixed;
         transition: .3s;
+      
     }
 
     .sorting {
