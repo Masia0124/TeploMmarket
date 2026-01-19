@@ -1124,10 +1124,6 @@ footer hr {
         flex: 0 0 180px;
     }
 
-    .cart_img {
-        height: 220px;
-    }
-
     .cart_item>div {
         padding: 10px;
     }
