@@ -852,7 +852,6 @@ footer hr {
     gap: 20px;
     margin-top: 30px;
     margin-bottom: 20px;
-    justify-content: center;
 }
 
 
@@ -1211,10 +1210,11 @@ footer hr {
     }
 
     .filter_aside {
-        position: fixed;
+        position: absolute;
         width: 40%;
         display: none;
         transition: .3s;
+        z-index: 999;
     }
 
     .filter_mobile {
@@ -1222,7 +1222,7 @@ footer hr {
         width: 40%;
         /* margin-top: 20px; */
         margin-left: 5px;
-        position: fixed;
+        position: absolute;
         transition: .3s;
       
     }
@@ -1244,6 +1244,9 @@ footer hr {
         margin-top: 20px;
         display: flex;
     }
+        .categori_div {
+            justify-content: center;
+        } 
 }
 
 
