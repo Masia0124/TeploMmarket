@@ -20,6 +20,128 @@
 
 
 <body>
+    <div class="shopping_bag01">
+
+        <div class="cart-modal" id="cart-modal">
+            <div class="cart-modal__overlay"></div>
+
+            <div class="cart-modal__content">
+                <button class="cart-modal__close">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+
+                <div class="cart-item d-flex">
+
+                    <td class="img_items">
+                        <a href="" class="img_items">
+                            <img src="img/494a5089048e3d5b9ac0b375d3b05e3e 1.jpg" alt="">
+                        </a>
+                    </td>
+                    <div class="cart-item__info">
+                        <a href="#">Котел електричний</a>
+                    </div>
+
+                    <div class="product-purchase">
+
+                        <div class="quantity-wrapper">
+                            <button type="button" class="qty-btn qty-minus">−</button>
+
+                            <input type="text" name="quantity" value="1" size="2" id="input-quantity">
+
+                            <button type="button" class="qty-btn qty-plus">+</button>
+                        </div>
+
+                        <button type="button" onclick="cart.remove('3229');" title="Видалити"
+                            class="btn_delete">Видалити</button>
+
+                    </div>
+
+                    <div class="cart-item__price">00000 грн</div>
+
+                </div>
+
+                <div class="cart-item d-flex">
+
+                    <td class="img_items">
+                        <a href="" class="img_items">
+                            <img src="img/494a5089048e3d5b9ac0b375d3b05e3e 1.jpg" alt="">
+                        </a>
+                    </td>
+                    <div class="cart-item__info">
+                        <a href="#">Котел електричний</a>
+                    </div>
+
+                    <div class="product-purchase">
+
+                        <div class="quantity-wrapper">
+                            <button type="button" class="qty-btn qty-minus">−</button>
+
+                            <input type="text" name="quantity" value="1" size="2" id="input-quantity">
+
+                            <button type="button" class="qty-btn qty-plus">+</button>
+                        </div>
+
+                        <button type="button" onclick="cart.remove('3229');" title="Видалити"
+                            class="btn_delete">Видалити</button>
+
+                    </div>
+
+                    <div class="cart-item__price">00000 грн</div>
+
+                </div>
+
+                <div class="cart-item d-flex">
+
+                    <td class="img_items">
+                        <a href="" class="img_items">
+                            <img src="img/494a5089048e3d5b9ac0b375d3b05e3e 1.jpg" alt="">
+                        </a>
+                    </td>
+                    <div class="cart-item__info">
+                        <a href="#">Котел електричний</a>
+                    </div>
+
+                    <div class="product-purchase">
+
+                        <div class="quantity-wrapper">
+                            <button type="button" class="qty-btn qty-minus">−</button>
+
+                            <input type="text" name="quantity" value="1" size="2" id="input-quantity">
+
+                            <button type="button" class="qty-btn qty-plus">+</button>
+                        </div>
+
+                        <button type="button" onclick="cart.remove('3229');" title="Видалити"
+                            class="btn_delete">Видалити</button>
+
+                    </div>
+
+                    <div class="cart-item__price">00000 грн</div>
+
+                </div>
+
+                <div class="d-flex right_bag">
+
+                    <div class="cart-total">
+                        Сума: <strong> 00000 грн</strong>
+                    </div>
+
+
+                    <hr class="bag-hr">
+                    <div class="cart-actions">
+                        <a href="#" class="btn-outline">Продовжити покупки</a>
+                        <a href="#" class="btn-primary">Оформити замовлення</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
     <header>
 
 
@@ -129,8 +251,8 @@
                     </span>
                 </div>
                 <div class="d-flex">
-                    <a href=""> <img src="icons/Heart.svg" alt=""></a>
-                    <a href=""> <img src="icons/Shopping_cart.svg" alt=""></a>
+                    <a href="#"> <img src="icons/Heart.svg" alt=""></a>
+                    <a href="#"  class="bag_cart"> <img src="icons/Shopping_cart.svg" alt=""></a>
                 </div>
             </div>
         </div>
@@ -231,10 +353,12 @@
                     <div class="d-flex">
                         <div>
                             <div class="cart_img">
-                                <a href=""><img src="img/494a5089048e3d5b9ac0b375d3b05e3e 1.jpg" alt=""></a>
+                                <a href="product_page.html"><img src="img/494a5089048e3d5b9ac0b375d3b05e3e 1.jpg"
+                                        alt=""></a>
 
                             </div>
-                            <h6><a href="">Котел твердопаливний Котел твердопаливний Котел твердопаливний</a></h6>
+                            <h6><a href="product_page.html">Котел твердопаливний Котел твердопаливний Котел
+                                    твердопаливний</a></h6>
                             <span> в наявності </span>
                         </div>
                     </div>
@@ -242,8 +366,10 @@
                     <div class="d-flex sum">
                         <span>38400 грн</span>
                         <div>
-                            <i class="heart fa-regular fa-heart"></i>
-                            <i class="cart-shopping fa-solid fa-cart-shopping"></i>
+                            <button><i class="heart fa-regular fa-heart"></i>
+                            </button>
+                            <button><i class="cart-shopping fa-solid fa-cart-shopping"></i>
+                            </button>
                         </div>
                     </div>
 
@@ -252,12 +378,12 @@
                     <div class="d-flex">
                         <div>
                             <div class="cart_img">
-                                <a href="">
+                                <a href="product_page.html">
                                     <img src="img/7b7680f52bbfcaa4001f1b3371ce7ea4 1.jpg" alt="">
                                 </a>
 
                             </div>
-                            <h6><a href="">Котел газовий</a></h6>
+                            <h6><a href="product_page.html">Котел газовий</a></h6>
                             <span>в наявності</span>
                         </div>
 
@@ -266,54 +392,10 @@
                     <div class="d-flex sum">
                         <span>18600 грн</span>
                         <div>
-                            <i class="heart fa-regular fa-heart"></i>
-                            <i class="cart-shopping fa-solid fa-cart-shopping"></i>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="cart_item">
-                    <div class="d-flex">
-                        <div>
-                            <div class="cart_img">
-                                <a href=""><img src="img/494a5089048e3d5b9ac0b375d3b05e3e 1.jpg" alt=""></a>
-
-                            </div>
-                            <h6><a href="">Котел твердопаливний</a></h6>
-                            <span> в наявності </span>
-                        </div>
-                    </div>
-
-                    <div class="d-flex sum">
-                        <span>38400 грн</span>
-                        <div>
-                            <i class="heart fa-regular fa-heart"></i>
-                            <i class="cart-shopping fa-solid fa-cart-shopping"></i>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="cart_item">
-                    <div class="d-flex">
-                        <div>
-                            <div class="cart_img">
-                                <a href="">
-                                    <img src="img/7b7680f52bbfcaa4001f1b3371ce7ea4 1.jpg" alt="">
-                                </a>
-
-                            </div>
-                            <h6><a href="">Котел газовий</a></h6>
-                            <span>в наявності</span>
-                        </div>
-
-
-                    </div>
-                    <div class="d-flex sum">
-                        <span>18600 грн</span>
-                        <div>
-                            <i class="heart fa-regular fa-heart"></i>
-                            <i class="cart-shopping fa-solid fa-cart-shopping"></i>
+                            <button><i class="heart fa-regular fa-heart"></i>
+                            </button>
+                            <button><i class="cart-shopping fa-solid fa-cart-shopping"></i>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -333,8 +415,10 @@
                     <div class="d-flex sum">
                         <span>38400 грн</span>
                         <div>
-                            <i class="heart fa-regular fa-heart"></i>
-                            <i class="cart-shopping fa-solid fa-cart-shopping"></i>
+                            <button><i class="heart fa-regular fa-heart"></i>
+                            </button>
+                            <button><i class="cart-shopping fa-solid fa-cart-shopping"></i>
+                            </button>
                         </div>
                     </div>
 
@@ -358,8 +442,60 @@
                     <div class="d-flex sum">
                         <span>18600 грн</span>
                         <div>
-                            <i class="heart fa-regular fa-heart"></i>
-                            <i class="cart-shopping fa-solid fa-cart-shopping"></i>
+                            <button><i class="heart fa-regular fa-heart"></i>
+                            </button>
+                            <button><i class="cart-shopping fa-solid fa-cart-shopping"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cart_item">
+                    <div class="d-flex">
+                        <div>
+                            <div class="cart_img">
+                                <a href=""><img src="img/494a5089048e3d5b9ac0b375d3b05e3e 1.jpg" alt=""></a>
+
+                            </div>
+                            <h6><a href="">Котел твердопаливний</a></h6>
+                            <span> в наявності </span>
+                        </div>
+                    </div>
+
+                    <div class="d-flex sum">
+                        <span>38400 грн</span>
+                        <div>
+                            <button><i class="heart fa-regular fa-heart"></i>
+                            </button>
+                            <button><i class="cart-shopping fa-solid fa-cart-shopping"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="cart_item">
+                    <div class="d-flex">
+                        <div>
+                            <div class="cart_img">
+                                <a href="">
+                                    <img src="img/7b7680f52bbfcaa4001f1b3371ce7ea4 1.jpg" alt="">
+                                </a>
+
+                            </div>
+                            <h6><a href="">Котел газовий</a></h6>
+                            <span>в наявності</span>
+                        </div>
+
+
+                    </div>
+                    <div class="d-flex sum">
+                        <span>18600 грн</span>
+                        <div>
+                            <button><i class="heart fa-regular fa-heart"></i>
+                            </button>
+                            <button><i class="cart-shopping fa-solid fa-cart-shopping"></i>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -409,8 +545,10 @@
                     <div class="d-flex sum">
                         <span>202 грн</span>
                         <div>
-                            <i class="heart fa-regular fa-heart"></i>
-                            <i class="cart-shopping fa-solid fa-cart-shopping"></i>
+                            <button><i class="heart fa-regular fa-heart"></i>
+                            </button>
+                            <button><i class="cart-shopping fa-solid fa-cart-shopping"></i>
+                            </button>
                         </div>
                     </div>
 
@@ -433,8 +571,10 @@
                     <div class="d-flex sum">
                         <span>202 грн</span>
                         <div>
-                            <i class="heart fa-regular fa-heart"></i>
-                            <i class="cart-shopping fa-solid fa-cart-shopping"></i>
+                            <button><i class="heart fa-regular fa-heart"></i>
+                            </button>
+                            <button><i class="cart-shopping fa-solid fa-cart-shopping"></i>
+                            </button>
                         </div>
                     </div>
 
@@ -456,8 +596,10 @@
                     <div class="d-flex sum">
                         <span>202 грн</span>
                         <div>
-                            <i class="heart fa-regular fa-heart"></i>
-                            <i class="cart-shopping fa-solid fa-cart-shopping"></i>
+                            <button><i class="heart fa-regular fa-heart"></i>
+                            </button>
+                            <button><i class="cart-shopping fa-solid fa-cart-shopping"></i>
+                            </button>
                         </div>
                     </div>
 
@@ -479,8 +621,10 @@
                     <div class="d-flex sum">
                         <span>202 грн</span>
                         <div>
-                            <i class="heart fa-regular fa-heart"></i>
-                            <i class="cart-shopping fa-solid fa-cart-shopping"></i>
+                            <button><i class="heart fa-regular fa-heart"></i>
+                            </button>
+                            <button><i class="cart-shopping fa-solid fa-cart-shopping"></i>
+                            </button>
                         </div>
                     </div>
 
@@ -502,8 +646,10 @@
                     <div class="d-flex sum">
                         <span>202 грн</span>
                         <div>
-                            <i class="heart fa-regular fa-heart"></i>
-                            <i class="cart-shopping fa-solid fa-cart-shopping"></i>
+                            <button><i class="heart fa-regular fa-heart"></i>
+                            </button>
+                            <button><i class="cart-shopping fa-solid fa-cart-shopping"></i>
+                            </button>
                         </div>
                     </div>
 
@@ -518,7 +664,10 @@
 
 
         <section class="popularTovar boilers_home container">
-            <h5>Бойлери</h5>
+            <div>
+                <h5>Бойлери</h5>
+            </div>
+
             <div class="d-flex carts">
                 <div class="cart_item">
                     <div class="d-flex">
@@ -537,8 +686,10 @@
                     <div class="d-flex sum">
                         <span>6240 грн</span>
                         <div>
-                            <i class="heart fa-regular fa-heart"></i>
-                            <i class="cart-shopping fa-solid fa-cart-shopping"></i>
+                            <button><i class="heart fa-regular fa-heart"></i>
+                            </button>
+                            <button><i class="cart-shopping fa-solid fa-cart-shopping"></i>
+                            </button>
                         </div>
                     </div>
 
@@ -560,8 +711,10 @@
                     <div class="d-flex sum">
                         <span>6240 грн</span>
                         <div>
-                            <i class="heart fa-regular fa-heart"></i>
-                            <i class="cart-shopping fa-solid fa-cart-shopping"></i>
+                            <button><i class="heart fa-regular fa-heart"></i>
+                            </button>
+                            <button><i class="cart-shopping fa-solid fa-cart-shopping"></i>
+                            </button>
                         </div>
                     </div>
 
@@ -583,8 +736,10 @@
                     <div class="d-flex sum">
                         <span>6240 грн</span>
                         <div>
-                            <i class="heart fa-regular fa-heart"></i>
-                            <i class="cart-shopping fa-solid fa-cart-shopping"></i>
+                            <button><i class="heart fa-regular fa-heart"></i>
+                            </button>
+                            <button><i class="cart-shopping fa-solid fa-cart-shopping"></i>
+                            </button>
                         </div>
                     </div>
 
@@ -606,8 +761,10 @@
                     <div class="d-flex sum">
                         <span>6240 грн</span>
                         <div>
-                            <i class="heart fa-regular fa-heart"></i>
-                            <i class="cart-shopping fa-solid fa-cart-shopping"></i>
+                            <button><i class="heart fa-regular fa-heart"></i>
+                            </button>
+                            <button><i class="cart-shopping fa-solid fa-cart-shopping"></i>
+                            </button>
                         </div>
                     </div>
 
@@ -629,8 +786,10 @@
                     <div class="d-flex sum">
                         <span>6240 грн</span>
                         <div>
-                            <i class="heart fa-regular fa-heart"></i>
-                            <i class="cart-shopping fa-solid fa-cart-shopping"></i>
+                            <button><i class="heart fa-regular fa-heart"></i>
+                            </button>
+                            <button><i class="cart-shopping fa-solid fa-cart-shopping"></i>
+                            </button>
                         </div>
                     </div>
 
@@ -652,8 +811,10 @@
                     <div class="d-flex sum">
                         <span>6240 грн</span>
                         <div>
-                            <i class="heart fa-regular fa-heart"></i>
-                            <i class="cart-shopping fa-solid fa-cart-shopping"></i>
+                            <button><i class="heart fa-regular fa-heart"></i>
+                            </button>
+                            <button><i class="cart-shopping fa-solid fa-cart-shopping"></i>
+                            </button>
                         </div>
                     </div>
 

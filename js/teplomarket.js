@@ -43,9 +43,20 @@ $(document).ready(function () {
 
     })
      
+    $(".bag_cart").click(function () { 
+        $('.shopping_bag01').addClass('shopping_bag01_active');
+    })
+
+    $(".cart-modal__close").click(function () {
+        $('.shopping_bag01').removeClass('shopping_bag01_active');
+    })
+    
 
 
 
+
+
+    
 //    $(document).on('click', '.dropdawn_title', function(e){
 //      e.preventDefault();
 //      let submenu = $(this).children('.dropdawn_list');
@@ -82,11 +93,36 @@ $(document).on('click', '.dropdawn_title', function (e) {
 
 
 
+    document.addEventListener('click', function (e) {
+  if (e.target.classList.contains('qty-plus')) {
+    const input = e.target.closest('.quantity-wrapper').querySelector('input');
+    input.value = parseInt(input.value) + 1;
+  }
+
+  if (e.target.classList.contains('qty-minus')) {
+    const input = e.target.closest('.quantity-wrapper').querySelector('input');
+    const val = parseInt(input.value);
+    if (val > 1) input.value = val - 1;
+    }
+    
+   
+});
 
 
+// $(document).on('.product-purchase', 'button', function (e) {
+//     alert('click - ');  
+//     const input = e.target.closest('.quantity-wrapper').querySelector('input');
+//     const val = parseInt(input.value);
+//     if (val > 1) input.value = val - 1; 
+// });
 
+// $(document).on('click', '.qty-plus', function (e) {
+//     alert('click + ');  
+//     const input = e.target.closest('.quantity-wrapper').querySelector('input');
+//     input.value = parseInt(input.value) + 1; 
+// });
 
-
+  
 
 
 
