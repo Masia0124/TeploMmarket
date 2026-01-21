@@ -963,10 +963,13 @@ footer hr {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    max-height: 90vh;
+    display: flex;
 }
 
+
 .cart-modal__close {
-    float: right;
+    margin-left: auto;
     padding: 10px;
 }
 
@@ -1051,9 +1054,20 @@ footer hr {
     font-weight: bold;
 }
 
+.cart-body {
+    overflow-y: auto;
+    flex: 1;
 
+}
 
+.cart-modal__content {
+    display: flex;
+    flex-direction: column;
+}
 
+.btn_delete_mobile {
+    display: none;
+}
 
 
 
@@ -1457,13 +1471,97 @@ footer hr {
         justify-content: center;
     }
 
-    .cart-item {
+    /* .cart-item {
         flex-wrap: wrap;
-    }
+    } */
 
     .cart-actions {
         flex-wrap: wrap;
         display: flex;
+    }
+
+    .qty-btn {
+        width: 20px;
+        height: 20px;
+        font-size: 10px;
+    }
+
+    .quantity-wrapper input {
+        width: 20px;
+        font-size: 10px;
+    }
+
+    .btn_delete {
+        font-size: 10px;
+        margin-right: 5px;
+    }
+
+    .cart-item__info {
+        font-size: 12px;
+    }
+
+    .cart-item__price {
+        font-size: 12px;
+    }
+
+    .img_items {
+        width: 65px;
+        height: 65px;
+    }
+
+    .img_items>img {
+        max-height: 95%;
+    }
+
+    .cart-modal {
+        padding: 5px;
+    }
+
+    .product-purchase {
+        gap: 5px;
+    }
+
+    .cart-total {
+        font-size: 15px;
+    }
+
+    .cart-actions {
+        margin-top: 15px;
+        gap: 5px;
+        justify-content: end;
+    }
+
+    .btn-outline {
+        margin-right: 0;
+        font-size: 15px;
+    }
+
+    .btn-primary {
+        font-size: 15px;
+    }
+
+    .btn_delete_mobile {
+        display: block;
+        font-size: 10px;
+        margin-right: 5px;
+        border: 2px solid #7b787571;
+        transition: .5s;
+        color: #333;
+        border-radius: 10px;
+        padding: 2px 5px;
+
+        &:hover {
+            color: #F41515;
+            transition: .5s;
+        }
+    }
+
+    .btn_delete {
+        display: none;
+    }
+
+    .fa-color-delet {
+        color: #7b787571;
     }
 }
 
