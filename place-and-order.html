@@ -17,9 +17,15 @@
     <title>Teplomarket</title>
 </head>
 
+
+
+
+
+
+
+
+
 <body>
-
-
     <div class="shopping_bag01">
 
         <div class="cart-modal" id="cart-modal">
@@ -58,7 +64,7 @@
                                 <button type="button" class="qty-btn qty-plus">+</button>
                             </div>
 
-                            
+
                         </div>
 
                         <div class="cart-item__price">00000 грн</div>
@@ -306,157 +312,188 @@
 
     </header>
 
+    <div class="container place-and-order_main">
+        <div class="place-and-order">
 
-    <main>
-        <div>
-            <ul class="thumbnails">
-                <li>
-                    <a href="" class="image-placeholder thumbnails">
-                        <img src="" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a href="" class="image-placeholder thumbnails">
-                        <img src="" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a href="" class="image-placeholder thumbnails">
-                        <img src="" alt="">
-                    </a>
-                </li>
 
-            </ul>
-            <ul>
-                <li>
-                    <a href="#tab-description"></a>
-                </li>
-                <li>
-                    <a href="#tab-specification"></a>
-                </li>
-                <li>
-                    <a href="#tab-review"></a>
-                </li>
-            </ul>
-            <div class="tab-content">
-                <div class="tab-pane active" id="tab-description">
-                    <div>
-                        Just when you thought iMac had everything, now there´s even more. More powerful Intel Core 2 Duo
-                        processors.
-                        And more memory standard. Combine this with Mac OS X Leopard and iLife ´08, and it´s more
-                        all-in-one than
-                        ever. iMac packs amazing performance into a stunningly slim space.
+            <h1>Оформлення замовлення</h1>
+            <div>
+                <fieldset id="accaunt">
+                    <legend class="d-flex"><span class="number_order">1</span> Контактні данні</legend>
+                    <div class="contacts_01">
+                        <label for="">Ім’я:</label>
+                        <input class="input_accaunt" type="text" name="firstname" placeholder="Ваше ім’я">
                     </div>
-                </div>
-                <div id="tab-specification">
-                    <p>
+                    <div class="contacts_01">
+                        <label for="">Прізвище:</label>
+                        <input class="input_accaunt" type="text" name="firstname" placeholder="Ваше прізвище">
+                    </div>
+                    <div class="contacts_01">
+                        <label for="">Мобільний телефон:</label>
+                        <input class="input_accaunt" type="tel" name="firstname" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                    </div>
+                    <div class="contacts_01">
+                        <label for="">Ім’я:</label>
+                        <input class="input_accaunt" type="email" name="firstname" placeholder="Ваша пошта">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend class="d-flex"> <span class="number_order">2</span> Вибір способу доставки і оплати
+                    </legend>
+                    <p class="p-tekst-notmain">Доставка</p>
+                    <div class="payment_delyvery">
+                        <label for="">
+                            <input type="radio" name="delivery">У відділення Нової пошти
+                        </label>
+                        <br>
+                        <div class="contacts_01">
+                            <label for="">Місто:</label>
 
-                    </p>
-                </div>
-                <div class="tab-pane" id="tab-review">
-                    <form class="form-horizontal" id="form-review">
-                        <div id="review">
-                            <p>В цього товару немає відгуків.</p>
+                            <input class="input_accaunt" type="text">
+
                         </div>
-                        <h2>Написати відгук</h2>
-                        <div class="form-group required">
-                            <div class="col-sm-12">
-                                <label class="control-label" for="input-name">Ваше Ім`я</label>
-                                <input type="text" name="name" value="" id="input-name" class="form-control">
-                            </div>
+                        <div class="contacts_01">
+                            <label for="">відділення:</label>
+
+                            <input class="input_accaunt" type="text">
+
                         </div>
-                        <div class="form-group required">
-                            <div class="col-sm-12">
-                                <label class="control-label" for="input-review">Ваш відгук</label>
-                                <textarea name="text" rows="5" id="input-review" class="form-control"></textarea>
-                                <div class="help-block"><span class="text-danger">Зверніть увагу:</span> HTML не
-                                    перекладено!</div>
-                            </div>
+                    </div>
+                    <div class="payment_delyvery">
+                        <label for="">
+                            <input type="radio" name="delivery">Доставка за адресою
+                        </label>
+                        <br>
+                        <div class="contacts_01">
+                            <label for="">Адреса:</label>
+
+                            <input class="input_accaunt" type="text">
+
                         </div>
-                        <div class="form-group required">
-                            <div class="col-sm-12">
-                                <label class="control-label">Рейтинг</label>
-                                &nbsp;&nbsp;&nbsp; Поганий&nbsp;
-                                <input type="radio" name="rating" value="1">
-                                &nbsp;
-                                <input type="radio" name="rating" value="2">
-                                &nbsp;
-                                <input type="radio" name="rating" value="3">
-                                &nbsp;
-                                <input type="radio" name="rating" value="4">
-                                &nbsp;
-                                <input type="radio" name="rating" value="5">
-                                &nbsp;Хороший
-                            </div>
-                        </div>
-                        <div class="buttons clearfix">
-                            <div class="pull-right">
-                                <button type="button" id="button-review" data-loading-text="Завантажується..."
-                                    class="btn btn-primary">Продовжити</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-        <div class="colum_information_rgt">
-            <div>
-                <button></button>
-                <button></button>
-            </div>
-
-            <h1></h1>
-
-            <ul>
-                <li></li>
-                <li></li>
-            </ul>
-
-            <ul>
-                <li>
-                    <h2></h2>
-                </li>
-            </ul>
-            <div>
-                <h1 class="main_title">Котел електричний</h1>
-                <ul>
-                    <li>Виробник:</li>
-                    <li>Код товару:</li>
-                    <li></li>
-                </ul>
-
-                <ul>
-                    <li>100 грн</li>
-                </ul>
-                <div>
-
-                    <button class="">
-                        <i class="heart fa-regular fa-heart"></i>
-                    </button>
-
-                </div>
-
-                <div class="product-purchase">
-
-                    <div class="quantity-wrapper">
-                        <button type="button" class="qty-btn qty-minus">−</button>
-
-                        <input type="text" name="quantity" value="1" size="2" id="input-quantity">
-
-                        <button type="button" class="qty-btn qty-plus">+</button>
                     </div>
 
-                    <button type="button" id="button-cart" class="btn-buy">
-                        Купити
-                    </button>
+                    <p class="p-tekst-notmain">Оплата</p>
+                    <div class="payment payment_delyvery">
+                        <label for="">
+                            <input type="radio" name="payment">Оплата при отриманні замовлення
+                        </label>
 
+                        <label for="">
+                            <input type="radio" name="payment">Безготівковим розрахунком
+                        </label>
+                    </div>
+                </fieldset>
+            </div>
+
+            <div class="order-summary cart-item-order_mobile ">
+                <div class="cart-item-order d-flex">
+                    <img src="img/7b7680f52bbfcaa4001f1b3371ce7ea4 1.jpg" alt="">
+
+                    <div class="d-flex">
+                        <div class="cart-info">
+                            <div>Змішувач для кухні ПОЛиікипітє</div>
+                            <div>Кот товару: 01234</div>
+
+                        </div>
+
+                        <div class="price d-flex">
+
+                            <div> 1 шт </div>
+                            <div>973 грн</div>
+
+                        </div>
+                    </div>
                 </div>
 
+                <div class="cart-item-order  d-flex">
+                    <img src="img/7b7680f52bbfcaa4001f1b3371ce7ea4 1.jpg" alt="">
+
+                    <div class="d-flex">
+                        <div class="cart-info">
+                            <div>Змішувач для кухні ПОЛиікипітє</div>
+                            <div>Кот товару: 01234</div>
+
+                        </div>
+
+                        <div class="price d-flex">
+
+                            <div> 1 шт </div>
+                            <div>973 грн</div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="cart-total-order d-flex">
+                    <div>Разом:</div>
+                    <div>973 грн</div>
+                </div>
+            </div>
+            <div class="buttons-order">
+                <button class="order-btn">Підтвердити замовлення</button>
+                <button class="back_btn">Назад</button>
             </div>
         </div>
 
+        <div class="order-summary cart-item-order-main">
+            <div class="cart-item-order d-flex">
+                <img src="img/7b7680f52bbfcaa4001f1b3371ce7ea4 1.jpg" alt="">
 
-    </main>
+                <div class="d-flex">
+                    <div class="cart-info">
+                        <div>Змішувач для кухні ПОЛиікипітє</div>
+                        <div>Кот товару: 01234</div>
+
+                    </div>
+
+                    <div class="price d-flex">
+
+                        <div> 1 шт </div>
+                        <div>973 грн</div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="cart-item-order d-flex">
+                <img src="img/7b7680f52bbfcaa4001f1b3371ce7ea4 1.jpg" alt="">
+
+                <div class="d-flex">
+                    <div class="cart-info">
+                        <div>Змішувач для кухні ПОЛиікипітє</div>
+                        <div>Кот товару: 01234</div>
+
+                    </div>
+
+                    <div class="price d-flex">
+
+                        <div> 1 шт </div>
+                        <div>973 грн</div>
+
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="cart-total-order d-flex">
+                <div>Разом:</div>
+                <div>973 грн</div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
 
 
 
